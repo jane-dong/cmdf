@@ -12,8 +12,25 @@ import 'dart:ui' as ui;
 void main() {
   runApp(
     Center(
-      child: StatusBar(),
-    ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+       StatusBar(),
+        BottomBar(),
+        BackgroundBar(),
+        IconSend(),
+        IconHeart(),
+        Vector(),
+        IconCaptions(),
+        IconDiary(),
+        IconChat(),
+        IconInsights(),
+        IconGroup(),
+        NavigationBar(),
+        Card(),
+      ],
+      ),
+  ),
   );
 }
 
