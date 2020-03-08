@@ -6,25 +6,24 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'api.dart';
 
+void main() => runApp(BaseLayout());
 class BaseLayout extends StatelessWidget{
   @override
   Widget build(BuildContext context){
-    return new Scaffold(
+
         body: new Container(
-            child: new Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                child: [
-                  Text(
-                    "Lorem ipsum",
-                    style: bold24Roboto,
-                  ),
-                ]
-            )
-        )
+          child:  Center(
+            child:  Text(
+              "Lorem ipsum",
+            ),
+          ),
+          width: 320,
+          height: 240,
+          color: Colors.grey[300],
+
     );
   }
 }
-
 
 
 //void main() => runApp(MyApp());
