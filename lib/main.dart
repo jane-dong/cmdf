@@ -15,7 +15,7 @@ void main() {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
       children: [
-       StatusBar(),
+        StatusBar(),
         BottomBar(),
         BackgroundBar(),
         IconSend(),
