@@ -7,20 +7,36 @@ import 'package:http/http.dart' as http;
 import 'api.dart';
 
 void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class BaseLayout extends StatelessWidget{
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Flutter'),
+  Widget build(BuildContext context){
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/bulb.jpg"),
+            fit: BoxFit.cover,
+          ),
         ),
-        body: Center(
-          child: Api(),
-        ),
+        child: new Image.asset("assets/images/bulb.jpg"),
       ),
     );
   }
 }
+
+//class MyApp extends StatelessWidget {
+//  @override
+//  Widget build(BuildContext context) {
+//    return MaterialApp(
+//      title: 'Welcome to Flutter',
+//      home: Scaffold(
+//        appBar: AppBar(
+//          title: Text('Welcome to Flutter'),
+//        ),
+//        body: Center(
+//          child: Api(),
+//        ),
+//      ),
+//    );
+//  }
+//}
